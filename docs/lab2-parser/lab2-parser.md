@@ -108,3 +108,6 @@ IDENT[red],
 INTEGR_CONST[green],
 STRING[green],
 ```
+
+## 实验帮助
+点击[这里](lab2-parser/help.md)查看实验二指导文档
