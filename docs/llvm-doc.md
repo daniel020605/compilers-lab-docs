@@ -153,6 +153,18 @@ LLVMPositionBuilderAtEnd(builder, block1);
     LLVMValueRef vectorPointer = LLVMBuildAlloca(builder, vectorType, "vectorPointor");
 ```
 
+## 输出LLVM IR
+
+- 输出到控制台
+```java
+LLVMDumpModule(module);
+```
+- 输出到文件
+```java
+public static final BytePointer error = new BytePointer();
+LLVMPrintModuleToFile(module,"test.ll",error);
+```
+
 ## 关于如何查找java中使用生成LLVM IR的API
 
 这里以翻译`not exp`为例。
