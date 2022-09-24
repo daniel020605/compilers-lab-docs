@@ -6,6 +6,6 @@
 - [其他教程](otherguides)
 - [实验1](lab1-lexer/lab1-lexer.md)
 - [实验2](lab2-parser/lab2-parser.md)
-- [实验3](lab3-symbol/lab3-symbol.md)
+- [实验3](lab3-symbol/lab3-semantic-and-symbol.md)
 - [实验4](lab4-main/lab4-main.md)
 - [实验5](lab5-function-and-var/lab5-function-and-var.md)
