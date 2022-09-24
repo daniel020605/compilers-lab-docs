@@ -102,7 +102,7 @@ LLVMInitializeNativeTarget();
     LLVMBuildBr(builder, block2);
 
     //生成比较指令
-    LLVMValueRef condition = LLVMBuildICmp(builder, /*这是个常量，表示比较的方式*/LLVMIntEQ, n, zero, "condition = n == 0");
+    LLVMValueRef condition = LLVMBuildICmp(builder, /*这是个int型常量，表示比较的方式*/LLVMIntEQ, n, zero, "condition = n == 0");
     /* 上面参数中的常量包含如下取值
         LLVMIntEQ,
         LLVMIntNE,
@@ -116,10 +116,10 @@ LLVMInitializeNativeTarget();
         LLVMIntSLE,
     */
     //条件跳转指令，选择跳转到哪个块
-    //LLVMBuildCondBr(builder, 
-    // /*condition:LLVMValueRef*/ condition, 
-    // /*ifTrue:LLVMBasicBlockRef*/ ifTrue, 
-    // /*ifFalse:LLVMBasicBlockRef*/ ifFalse);
+    LLVMBuildCondBr(builder, 
+    /*condition:LLVMValueRef*/ condition, 
+    /*ifTrue:LLVMBasicBlockRef*/ ifTrue, 
+    /*ifFalse:LLVMBasicBlockRef*/ ifFalse);
 
     LLVMPositionBuilderAtEnd(builder, block2);//后续生成的指令将追加在block2的后面
 
