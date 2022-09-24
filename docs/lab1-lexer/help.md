@@ -1,4 +1,4 @@
-# Lab1指导文档
+# Lab1实验指导
 ## 第一步
 首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的词法规则和语法规则编写两个.g4文件，分别为SysYLexer.g4和SysYParser.g4，然后为其生成词法分析器和语法分析器
 

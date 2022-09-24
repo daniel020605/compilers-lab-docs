@@ -1,4 +1,4 @@
-# Lab2指导文档
+# Lab2实验指导
 
 ## 打印语法树的方式
 Antlr提供两种遍历语法树的方式，分别为Listener和Visitor，这里仅介绍Visitor的使用，对Listener感兴趣的同学请自行了解
