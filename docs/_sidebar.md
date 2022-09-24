@@ -10,3 +10,4 @@
 - [实验4](lab4-main/lab4-main.md)
 - [实验5](lab5-function-and-var/lab5-function-and-var.md)
 - [实验6](lab6-global-and-if/lab6-global-and-if.md)
+- [实验7](lab7-while/lab7-while.md)
