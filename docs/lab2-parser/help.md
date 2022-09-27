@@ -1,5 +1,15 @@
 # Lab2实验指导
 
+## 生成语法分析器
+首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的语法规则编写SysYParser.g4，然后为其生成语法分析器
+```java
+    CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
+    SysYParser sysYParser = new SysYParser(tokens);
+```
+
+## 报告错误
+语法分析器同词法分析器一样拥有ErrorListener，你可以通过类似的方式实现一个ErrorListener去完成语法错误的报告
+
 ## 打印语法树的方式
 Antlr提供两种遍历语法树的方式，分别为Listener和Visitor，这里仅介绍Visitor的使用，对Listener感兴趣的同学请自行了解
 - Visitor的基本使用
