@@ -22,7 +22,7 @@ antlr的词法分析器遇到错误时会向ANTLRErrorListener发送错误信息
 ```
 
 ## 第四步
-通过lexer的getAllTokens()函数触发lexer的错误检查
+通过lexer的getAllTokens()函数触发lexer的错误检查并获得所有token，之后按格式输出tokens即可
 ```java 
     sysYLexer.getAllTokens();
 ```
