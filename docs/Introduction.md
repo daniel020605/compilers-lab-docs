@@ -6,7 +6,7 @@
 
 # 课程简介
 
-![CPL](.assets/images/C_Programming_Language.svg ':size=20%')
+![Compiler](.assets/images/Compiler.svg ':size=20%')
 
 授课教师: **魏恒峰**. 
 
