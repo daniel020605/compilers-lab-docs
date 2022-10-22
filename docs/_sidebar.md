@@ -3,7 +3,6 @@
 - [教材选购](textbook)
 - [环境配置](environments)
 - [LLVM API使用手册](llvm-doc.md)
-- [其他教程](otherguides)
 - 实验
     - [实验1](lab1-lexer/lab1-lexer.md)
     - [实验2](lab2-parser/lab2-parser.md)
