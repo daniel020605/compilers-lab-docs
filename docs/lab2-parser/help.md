@@ -1,7 +1,7 @@
 # Lab2实验指导
 
 ## 生成语法分析器
-首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的语法规则编写SysYParser.g4，然后为其生成语法分析器
+首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的语法规则编写SysYParser.g4，并按照实验要求将exp与cond写成左递归的形式，然后为其生成语法分析器，请注意在这一步时要将文档中的字符串常量全部替换为已经在lab1中写过的token名
 ```java
     CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
     SysYParser sysYParser = new SysYParser(tokens);
@@ -18,7 +18,13 @@ Antlr提供两种遍历语法树的方式，分别为Listener和Visitor，这里
     SysYParserBaseVisitor visitor = new SysYParserBaseVisitor();
     visitor.visit(tree);
 ```
-- Visitor默认将对语法树进行深度优先遍历，你可以自己实现Visitor控制对子节点的遍历顺序，可以自行定义遍历节点时以及遍历子节点前后的行为
+- Visitor默认将对语法树进行深度优先遍历，你可以自己实现继承自SysYParserBaseVisitor的Visitor控制对子节点的遍历顺序，可以自行定义遍历节点时以及遍历子节点前后的行为
+```java
+    ParseTree tree = sysYParser.program();
+    //Visitor extends SysYParserBaseVisitor<Void>
+    Visitor visitor = new Visitor();
+    visitor.visit(tree);
+```
 - Visitor在访问每个节点的子节点前会调用**visitChildren**函数，本次实验中你可以通过重写这个函数来实现语法树的打印
 - Visitor在访问每个终结符节点时会调用**visitTerminal**函数，打印终结符及终结符的高亮可以通过重写这个函数来实现
 - 对于每一个语法规则都存在一个对应的visit函数，如exp规则对应的函数为**visitExp**，在后续实验中需要访问特定节点并做相应处理，此时需要调用这种函数
