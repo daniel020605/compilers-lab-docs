@@ -2,7 +2,7 @@
 
 ## 课程教材
 
-编译原理技术和工具
+- 《编译原理》
 
 ![编译原理龙书](https://tse1-mm.cn.bing.net/th/id/OIP-C.N6jMJ0pAjMTAkPDqVEGm3wHaKf?pid=ImgDet&rs=1)
 

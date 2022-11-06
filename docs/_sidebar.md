@@ -1,6 +1,7 @@
 - [编译原理课程简介](Introduction)
 - [抄袭与惩罚](plagiarize)
 - [教材选购](textbook)
+- [课程资源](resources)
 - [环境配置](environments)
 - [LLVM API使用手册](llvm-doc.md)
 - 实验
