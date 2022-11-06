@@ -65,8 +65,4 @@ either to you or to them. Make a habit of closing your laptop while you’re hel
 
 - 助教约谈疑似抄袭的同学，无异议则执行惩罚措施。
 
-## 抄袭的申诉过程
-
-若有异议，学生可以向任课教师报备，由任课教师代为向学院提起申诉。
-
 !> 让我们共同维护良好的学习环境，主动拒绝抄袭！

@@ -1,7 +1,4 @@
 #! /bin/bash
-cd ..
-git pull
-cd ./docs
 docker stop compiler
 docker rm compiler
 docker rmi compiler
