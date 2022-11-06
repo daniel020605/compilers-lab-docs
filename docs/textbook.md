@@ -2,11 +2,17 @@
 
 ## 课程教材
 
+编译原理技术和工具
+
+![编译原理龙书](https://tse1-mm.cn.bing.net/th/id/OIP-C.N6jMJ0pAjMTAkPDqVEGm3wHaKf?pid=ImgDet&rs=1)
+
 ## 辅助阅读材料
 
 另外, 本课程还有许多推荐的辅助阅读材料, 各位同学可 **酌情购买** 或 **下载电子版** (推荐, 不费钱).
 
-(TODO: 辅助阅读材料列表)
+- 《ANTLR4权威指南》
+- 《自制编译器》
+- 《LLVM CookBook》
 
 ## 辅助教学视频与课程录制
 
