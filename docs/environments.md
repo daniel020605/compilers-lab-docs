@@ -7,7 +7,7 @@
 
 - 若使用IDE，仅需安装Antlr的插件即可，以IDEA为例，在左上角，文件->设置->插件，搜索ANTLR4即可找到插件，下载后重启即可，之后可通过该插件处理.g4文件
 - 若文本编辑器则需自行安装Antlr
-    - 前往[Antlr官网](https://www.antlr.org/download.html)，下载Complete ANTLR 4.11.X.jar，对于Linux也可以选择从命令行，使用**curl -O https://www.antlr.org/download/antlr-4.11.1-complete.jar**
+    - 前往[Antlr官网](https://www.antlr.org/download.html)，下载Complete ANTLR 4.9.X.jar，对于Linux也可以选择从命令行，使用**curl -O https://www.antlr.org/download/antlr-4.9.1-complete.jar**
     - 添加环境变量，在环境变量中的CLASSPATH中添加jar文件所在位置
         - Windows下关闭所有窗口后重新打开命令行，输入**java org.antlr.v4.Tool**，查看是否安装成功
         - Linux下执行**source ~/.bashrc**使环境变量生效输入**java org.antlr.v4.Tool**，查看是否安装成功

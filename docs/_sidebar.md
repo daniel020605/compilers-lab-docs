@@ -4,6 +4,7 @@
 - [环境配置](environments)
 - [LLVM API使用手册](llvm-doc.md)
 - 实验
+    - [实验0](lab0-test/l0.md)
     - [实验1](lab1-lexer/lab1-lexer.md)
     - [实验2](lab2-parser/lab2-parser.md)
     - [实验3](lab3-type-and-rename/lab3-type-and-rename.md)
