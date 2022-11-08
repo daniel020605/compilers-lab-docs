@@ -101,7 +101,6 @@ OR[blue],
 IDENT[red], 
 //数字与字符串
 INTEGR_CONST[green],
-STRING[green],
 ```
 
 ## 实验帮助
