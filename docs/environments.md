@@ -16,7 +16,16 @@
 
 ### Linux下安装
 
+```bash
+sudo apt-get install llvm
+sudo apt-get install clang
+```
+安装后可通过如下命令测试，出现版本信息即为安装成功
 
+```bash
+clang -v
+lli --version
+```
 ### Windows下安装
 
 ?> 非常不建议，安装起来非常复杂，有条件请一定选择Linux
