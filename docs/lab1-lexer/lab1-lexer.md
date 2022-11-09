@@ -56,5 +56,26 @@ R_BRACE } at Line 8.
 ```
 输出时忽略所有注释，对十六进制和八进制数字常量输出token文本时需输出其十进制的值
 
+## 样例
+
+由于上面已经提供了一个正确输入的样例，此处仅提供一个错误输入的样例
+
+### 样例1
+
+输入:
+
+```SysY
+int main(){
+  int i = 1;
+  int j = ~i;
+}
+```
+
+输出：
+
+```
+Error type A at Line 3: Mysterious character "~".
+```
+
 ## 实验帮助
 点击[这里](lab1-lexer/help.md)查看实验一指导文档
