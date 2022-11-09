@@ -4,6 +4,7 @@
 - [课程资源](resources)
 - [环境配置](environments)
 - [LLVM API 使用手册](llvm-doc.md)
+- [其他教程](otherguides.md)
 - 实验
     - [实验0](lab0-test/l0.md)
     - [实验1](lab1-lexer/lab1-lexer.md)

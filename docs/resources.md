@@ -17,3 +17,6 @@
 ## 资源汇总
 - [resources @ github](https://github.com/courses-at-nju-by-hfwei/compilers-resources): 编译原理相关资源
   - [books](https://github.com/courses-at-nju-by-hfwei/compilers-resources/tree/master/books): 电子书籍
+
+## 实验答疑
+- [实验答疑文档](https://docs.qq.com/doc/DZU5valBKRVhydGpL)
