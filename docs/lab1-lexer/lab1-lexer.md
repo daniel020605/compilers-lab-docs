@@ -8,7 +8,7 @@ git checkout -b lab1
 
 ## Part1 词法分析
 - 本次实验需要完成词法分析，要求如下
-    - 当输入文件存在词法错误时报告词法错误在哪一行，格式为`Error type A at Line [lineNo]:[errorMessage]` 其中lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
+    - 当输入文件存在词法错误时报告词法错误在哪一行，格式为`Error type A at Line [lineNo]:[errorMessage]` 其中lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可，需要输出所有的错误
     - 当输入文件不存在词法错误时按照规定的格式进行输出
     - 输出时使用`System.err`，无论输入文件是否存在错误
 
