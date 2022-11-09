@@ -7,7 +7,7 @@
 
 ## Part1 类型检查
 - 本次实验你需要完成类型检查，要求如下
-    - 对于存在语义错误的输入，输出语义错误信息，格式为Error type [errorTypeNo] at Line [lineNo]:[errorMessage] 其中errorTypeNo为其错误类型编号，lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
+    - 对于存在语义错误的输入，输出语义错误信息，格式为`Error type [errorTypeNo] at Line [lineNo]:[errorMessage]` 其中errorTypeNo为其错误类型编号，lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
     - 对于不存在语义错误的输入在本部分不要求输出
     - 请注意，请输出最本质的错误，对其进行合理的恢复后继续分析后续错误
     - 输出时使用`System.err`
