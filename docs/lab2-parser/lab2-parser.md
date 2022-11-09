@@ -6,6 +6,7 @@
     - 将SysYParser.g4中exp和cond写成左递归
     - 当输入文件存在语法错误时报告语法错误在哪一行，格式为`Error type B at Line [lineNo]:[errorMessage]` 其中lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
     - 当输入文件不存在语法错误时按照规定格式输出语法树(含高亮)
+    - 输出时使用`System.err`，无论输入文件是否存在错误
 
 ## 改成左递归的形式
 ``` antlr 
