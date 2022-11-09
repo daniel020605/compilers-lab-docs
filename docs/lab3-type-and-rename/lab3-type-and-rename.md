@@ -7,15 +7,17 @@
 
 ## Part1 类型检查
 - 本次实验你需要完成类型检查，要求如下
-    - 对于存在语义错误的输入，输出语义错误信息，格式为Error type [errorTypeNo] at line [lineNo]:[errorMessage] 其中errorTypeNo为其错误类型编号，lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
+    - 对于存在语义错误的输入，输出语义错误信息，格式为Error type [errorTypeNo] at Line [lineNo]:[errorMessage] 其中errorTypeNo为其错误类型编号，lineNo为出错的token首个字符所在行的行号，errorMessage可自行定义，本实验不做要求，只要冒号前的信息正确即可
     - 对于不存在语义错误的输入在本部分不要求输出
     - 请注意，请输出最本质的错误，对其进行合理的恢复后继续分析后续错误
-    - 输出时使用`System.err`，无论输入文件是否存在错误
+    - 输出时使用`System.err`
 
 ## Part2 重命名
 - 本部分你需要对指定的字符重命名，要求如下
     - 对存在语义错误的输入，本部分将不输出任何内容
     - 对不存在语义错误的输入要求按规定格式打印对特定变量重命名后的语法树，打印格式与实验二（parser）中一致
+    - 输出时使用`System.err`
+
 
 ## 类型检查的错误类型定义
 
