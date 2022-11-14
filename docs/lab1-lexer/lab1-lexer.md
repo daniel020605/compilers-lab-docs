@@ -10,13 +10,13 @@
 
 ## 实验开始前
 
-1. 实验开始前请新建本实验的分支`lab1`，并在`lab1`分支下完成本次实验。
+- 实验开始前请新建本实验的分支`lab1`，并在`lab1`分支下完成本次实验。
 ```
     git checkout -b lab1
 ```
-2. 修改`.gitignore`文件，在最后一行添加`/out`，另外如果你有其它任何新生成的目录，也请添加到`.gitignore`。
+- 修改`.gitignore`文件，在最后一行添加`/out`，另外如果你有其它任何新生成的目录，也请添加到`.gitignore`。
 
-3. 修改`Makefile`的`compile`目标为如下：
+- 修改`Makefile`的`compile`目标为如下：
 
    ```makefile
    compile: antlr
