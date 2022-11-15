@@ -6,6 +6,7 @@
 - [LLVM API 使用手册](llvm-doc.md)
 - [其他教程](otherguides.md)
 - 实验
+    - [实验须知](lab-all/lab-all.md)
     - [实验0](lab0-test/l0.md)
     - [实验1](lab1-lexer/lab1-lexer.md)
     - [实验2](lab2-parser/lab2-parser.md)
