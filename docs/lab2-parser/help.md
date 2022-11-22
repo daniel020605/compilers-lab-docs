@@ -1,13 +1,32 @@
 # Lab2实验指导
 
 ## 生成语法分析器
-首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的语法规则编写SysYParser.g4，并按照实验要求将exp与cond写成左递归的形式，然后为其生成语法分析器，请注意在这一步时要将文档中的字符串常量全部替换为已经在lab1中写过的token名
+首先你需要根据[SysY语言定义](https://github.com/courses-at-nju-by-hfwei/compilers-lab-docs/raw/main/docs/docs/SysY%E8%AF%AD%E8%A8%80%E5%AE%9A%E4%B9%89.pdf)中的语法规则编写SysYParser.g4，并按照实验要求将exp与cond写成左递归的形式，然后为其生成语法分析器，请注意在这一步时要将文档中的字符串常量全部替换为已经在lab1中写过的token名。
 ```java
     CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
     SysYParser sysYParser = new SysYParser(tokens);
 ```
 
+另外需要注意的是，除了文档中定义的语法规则外，助教们新增了一个语法规则`program`，所以你的`SysYParser.g4`文件应该如下：
+
+```
+parser grammar SysYParser;
+
+options {
+    tokenVocab = SysYLexer;
+}
+
+program
+   : compUnit
+   ;
+   
+// 下面是其他的语法单元定义
+```
+
+
+
 ## 报告错误
+
 语法分析器同词法分析器一样拥有ErrorListener，你可以通过类似的方式实现一个ErrorListener去完成语法错误的报告
 
 ## 打印语法树的方式
