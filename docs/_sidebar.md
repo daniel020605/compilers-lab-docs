@@ -5,6 +5,7 @@
 - [环境配置](environments)
 - [LLVM API 使用手册](llvm-doc.md)
 - [其他教程](otherguides.md)
+- [完整词法规则](lexer.md)
 - 实验
     - [实验须知](lab-all/lab-all.md)
     - [实验0](lab0-test/l0.md)
