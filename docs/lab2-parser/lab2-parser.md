@@ -23,6 +23,8 @@
 
 ## 改成左递归的形式
 
+`Antlr`的强大之处就在于它能够自己处理左递归和优先级关系（通过先后顺序，越靠前的优先级越高）。在`SysY语言定义`中，为了能处理左递归它采用了一种比较复杂的语法定义方式。由于`Antlr`能自己处理左递归因此我们不需要采取它的方式，直接写成如下形式即可。所以你需要删除掉`SysY语言定义`中的关于`exp`和`cond`的语法单元（比如AddExp，PrimaryExp，UnaryExp等等），直接替换成如下形式即可，因为它们是语义上等价的。
+
 ``` antlr 
 exp : L_PAREN exp R_PAREN
    | lVal
@@ -40,6 +42,80 @@ cond
    | cond OR cond
    ;
 ```
+
+因为有些同学还是对于如何改写有疑惑，这里助教给出我们的写法。
+
+将`SysY语言定义`的这部分：
+
+```
+Exp 		-> 	AddExp
+Cond 		-> 	LorExp
+Lval 		-> 	Ident {'[' Exp ']'}
+PrimaryExp 	-> 	'('Exp')'|LVal|Number
+Number 		-> 	IntConst
+UnaryExp 	-> 	PrimaryExp | Ident '('[FuncRParams]')' | UnaryOp UnaryExp
+UnaryOp 	-> 	'+' | '−' | '!'
+FuncRParams	-> 	Exp { ',' Exp }
+MulExp		-> 	UnaryExp | MulExp ('*' | '/' | '%') UnaryExp
+AddExp		-> 	MulExp | AddExp ('+' | '−') MulExp
+RelExp		-> 	AddExp | RelExp ('<' | '>' | '<=' | '>=') AddExp
+EqExp		-> 	RelExp | EqExp ('==' | '!=') RelExp
+LAndExp		->	EqExp | LAndExp '&&' EqExp
+LOrExp		->	LAndExp | LOrExp '||' LAndExp
+ConstExp	->	AddExp 
+```
+
+改写为如下形式：
+
+```
+exp
+   : L_PAREN exp R_PAREN
+   | lVal 
+   | number
+   | IDENT L_PAREN funcRParams? R_PAREN 
+   | unaryOp exp 
+   | exp (MUL | DIV | MOD) exp
+   | exp (PLUS | MINUS) exp
+   ;
+
+cond
+   : exp 
+   | cond (LT | GT | LE | GE) cond
+   | cond (EQ | NEQ) cond 
+   | cond AND cond 
+   | cond OR cond 
+   ;
+
+lVal
+   : IDENT (L_BRACKT exp R_BRACKT)*
+   ;
+
+number
+   : INTEGR_CONST
+   ;
+
+unaryOp
+   : PLUS
+   | MINUS
+   | NOT
+   ;
+
+funcRParams
+   : param (COMMA param)*
+   ;
+
+param
+   : exp
+   ;
+
+constExp
+   : exp
+   ;
+```
+
+注意：改写的过程中助教为了方便大家理解实参列表`FuncRParams`以及与形参的书写形式对应，因此在`FuncRParams	-> 	Exp { ',' Exp }`的语法定义中新增了一层`FuncRParams -> Param {',' Param}`，  `Param -> Exp`，这一点在实验指导文档中也提及到了。
+
+**注意**：以上的改写并不会改变`SysY`语言的表达能力，但这样改写后看起来就直观很多，也与大家课上学习的`Antlr`能处理左递归相呼应。希望大家不满足于直接搬运助教的翻译结果，仔细揣摩这二者之间的等价性。
 
 ## 样例
 
