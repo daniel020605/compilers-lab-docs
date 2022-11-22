@@ -69,21 +69,21 @@ ConstExp	->	AddExp
 
 ```
 exp
-   : L_PAREN exp R_PAREN #expParenthesis
-   | lVal #lvalExp
-   | number #numberExp
-   | IDENT L_PAREN funcRParams? R_PAREN #callFuncExp
-   | unaryOp exp #unaryOpExp
-   | exp (MUL | DIV | MOD) exp #mulExp
-   | exp (PLUS | MINUS) exp #plusExp
+   : L_PAREN exp R_PAREN
+   | lVal 
+   | number
+   | IDENT L_PAREN funcRParams? R_PAREN 
+   | unaryOp exp 
+   | exp (MUL | DIV | MOD) exp
+   | exp (PLUS | MINUS) exp
    ;
 
 cond
-   : exp #expCond
-   | cond (LT | GT | LE | GE) cond #ltCond
-   | cond (EQ | NEQ) cond #eqCond
-   | cond AND cond #andCond
-   | cond OR cond #orCond
+   : exp 
+   | cond (LT | GT | LE | GE) cond
+   | cond (EQ | NEQ) cond 
+   | cond AND cond 
+   | cond OR cond 
    ;
 
 lVal
