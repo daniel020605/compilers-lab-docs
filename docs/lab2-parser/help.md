@@ -25,7 +25,7 @@ compUnit
 // 下面是其他的语法单元定义
 ```
 
-为了让该语言的参数可扩展，助教将`funcRParams`做出了修改，修改如下：
+为了让该语言的参数可扩展，助教对`funcRParams`做出了修改，修改如下：
 
 ```antlr
 
@@ -35,7 +35,6 @@ funcRParams
 
 param
    : exp
-   | STRING
    ;
 ```
 
