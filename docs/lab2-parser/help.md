@@ -7,9 +7,9 @@
     SysYParser sysYParser = new SysYParser(tokens);
 ```
 
-另外需要注意的是，除了文档中定义的语法规则外，助教们新增了一个语法规则`program`，所以你的`SysYParser.g4`文件应该如下：
+注意，除了文档中定义的语法规则外，助教们新增了一个语法规则`program`，并对`compUnit`做出了修改，所以你的`SysYParser.g4`文件应该如下：
 
-```
+```antlr
 parser grammar SysYParser;
 
 options {
@@ -19,11 +19,25 @@ options {
 program
    : compUnit
    ;
-   
+compUnit
+   : (funcDef | decl)+ EOF
+   ;
 // 下面是其他的语法单元定义
 ```
 
+为了让该语言的参数可扩展，助教将`funcRParams`做出了修改，修改如下：
 
+```antlr
+
+funcRParams
+   : param (COMMA param)*
+   ;
+
+param
+   : exp
+   | STRING
+   ;
+```
 
 ## 报告错误
 
