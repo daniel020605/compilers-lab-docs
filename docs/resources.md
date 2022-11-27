@@ -1,8 +1,16 @@
 # 课程资源
 
 ## 课程课件
+- [2022-compilers-lectures @ github](https://github.com/courses-at-nju-by-hfwei/compilers-lectures/tree/master/2022)
+- [2021-compilers-lectures @ github](https://github.com/courses-at-nju-by-hfwei/compilers-lectures/tree/master/2021)
 
-- [compilers-lectures @ github](https://github.com/courses-at-nju-by-hfwei/compilers-lectures/tree/master/2022): 课程课件
+## 课程视频
+- [2022-Compilers @ bilibili](https://space.bilibili.com/479141149/channel/collectiondetail?sid=837891)
+- [2021-Compilers @ bilibili](https://space.bilibili.com/479141149/channel/seriesdetail?sid=490581)
+
+## 课程习题
+- [2022-compilers-problem-set](https://github.com/courses-at-nju-by-hfwei/compilers-problem-set/tree/master/2022)
+- [2021-compilers-problem-set](https://github.com/courses-at-nju-by-hfwei/compilers-problem-set/tree/master/2021)
 
 ## 代码仓库
 - [2022-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding): 课程演示代码仓库
