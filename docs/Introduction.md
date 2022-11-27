@@ -56,7 +56,7 @@
 | 11 (2-lexer-handwritten) | 手写词法分析器 | 手写词法分析器，状态图 | D2.6、D3.3、D附录A.3；R2 | R2 为课外选读 |
 | 11 (3-lexer-automata) | 自动化词法分析器 | 自动机理论 | D3.5、D3.6、D3.7；E2.6.1、E2.6.2 | E2.6.2 为课外选读 |
 | 12 (4-parser-cfg-antlr) | Parser 自动生成器 | ANTLR 4 语法分析器、上下文无关文法、EBNF | D4.1、D4.2、D4.3；A5.3、A5.4、A6.4、A8.3 | D4.1.3、D4.1.4、D4.3.5 除外；A4.1、A4.2、A4.3 选读 |
-| 12 (4-parser-cfg-antlr cont.) | 补充 2-、3- 两次课遗留内容 | | | |
+| 12 (4-parser-cfg-antlr cont.) | 补充 2-、3- 两次课遗留内容 | DFA => RE 步骤课后录屏讲解 | | |
 | 13 (5-parser-ll) | 递归下降的 LL(1) 语法分析算法 | LL(1) | D4.4 | D4.4.5 暂时略过 |
 | 13 (6-parser-allstar) | ALL(*) 语法分析算法 | | | |
 
