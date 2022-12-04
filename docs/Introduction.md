@@ -44,6 +44,7 @@
 
 - D: 《编译原理 本科教学版》(龙书)
 - A: 《ANTLR 4 权威指南》
+- L: 《编程语言实现模式》(Language Implementation Patterns)
 - R: 《编译系统透视 (See Compiling System Run)》
 - E: 《编译器设计 第二版 (Engineering a Compiler)》
 
@@ -59,7 +60,7 @@
 | 12 (4.3-parser-cfg-antlr-re) | 补充 3-、4- 两次课遗留内容 | | | |
 | 13 (5-parser-ll) | 递归下降的 LL(1) 语法分析算法 | LL(1) | D4.4 | D4.4.5 暂时略过 |
 | 13 (6-parser-allstar) | ALLStar 语法分析算法 | 优先级上升算法、ALLStar 算法、二义性消解策略 | A前言、A13.7、A14 | 优先级上升算法需要掌握，其余为扩展介绍内容 |
-| 14 (7-symtable) | 符号表 | 符号表构造方法 | | |
+| 14 (7-symtable) | 符号表 | 符号表构造方法 | A8.4、L6 | L7 选读 |
 
 
 ## 学习方法
