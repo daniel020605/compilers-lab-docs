@@ -129,6 +129,7 @@ Program
       FuncType
         int INT[orange]
       a IDENT[red]
+      Block
         BlockItem
           Stmt
             return RETURN[orange]
@@ -139,6 +140,7 @@ Program
       FuncType
         int INT[orange]
       main IDENT[red]
+      Block
         BlockItem
           Decl
             VarDecl
