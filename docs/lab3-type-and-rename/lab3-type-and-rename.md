@@ -159,7 +159,7 @@ int main() {
 ```
 
 ```param
-lineNo=8 column=4 name=d
+8 4 d
 ```
 
 输出：
