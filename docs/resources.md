@@ -15,6 +15,8 @@
 ## 代码仓库
 - [2022-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding): 课程演示代码仓库
 
+- [compilers-antlr @ github](https://github.com/courses-at-nju-by-hfwei/compilers-antlr): 备课演示代码仓库
+
 - [pseudocode @ github](https://github.com/courses-at-nju-by-hfwei/compilers-pseudocode): 算法伪代码
 
 ## 阅读资料
