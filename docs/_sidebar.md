@@ -1,4 +1,4 @@
-- [课程简介](Introduction)
+- [课程简介](intro)
 - [抄袭与惩罚](plagiarize)
 - [课程教材](textbook)
 - [课程资源](resources)
