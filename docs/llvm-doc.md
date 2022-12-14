@@ -17,6 +17,7 @@
 import org.bytedeco.llvm.LLVM.*;
 import static org.bytedeco.llvm.global.LLVM.*;
 ```
+
 ## 初始化LLVM
 ```java 
 //初始化LLVM
@@ -251,11 +252,11 @@ tmp_ = LLVMBuildZExt(builder, tmp_, i32Type, "tmp_");
   
   + 借助github。
   
-    + 首先搜索`LLVMBuildICmp`。得到结果为：![](img/github1)
+    + 首先搜索`LLVMBuildICmp`。得到结果为：![](imgs/github1.png)
   
-    + 点击Code，然后选择Java，![](img\github2)
+    + 点击Code，然后选择Java，![](imgs\github2.png)
   
-      现在你可以看到`LLVMIntSLE`，`LLVMIntEQ`等出现在了第二个参数的位置上，你可以选择clone这些项目，然后查看`LLVMIntSLE`，`LLVMIntEQ`是在哪里定义的，助教本地的结果如下![](img/idea1)
+      现在你可以看到`LLVMIntSLE`，`LLVMIntEQ`等出现在了第二个参数的位置上，你可以选择clone这些项目，然后查看`LLVMIntSLE`，`LLVMIntEQ`是在哪里定义的，助教本地的结果如下![](imgs/idea1.png)
   
       在这里面你可以看到各种各样的常量，依据参数名你应该可以找到你需要的那一个。如果光看名字认不出来，你还可以选择复制变量名，浏览器搜索，常用的都可以搜索到结果。
 
