@@ -16,3 +16,4 @@
 - 访问到函数定义时为`module`添加`function`（函数）并为`function`添加`basicBlock`（基本块），详见[LLVM API使用手册-生成函数](llvm-doc.md#生成函数)与[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
 - 访问到`return`语句时使用`IRBuilder`在基本块内生成生成`ret`指令，详见[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
 - 访问表达式运算时使用`IRBuilder`在基本块内生成能够实现该运算的指令[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
+    - 翻译时请注意运算符的优先级
