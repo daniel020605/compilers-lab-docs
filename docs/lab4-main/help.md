@@ -4,7 +4,38 @@
 
 你可以在[LLVM API使用手册](llvm-doc.md)中学习如何使用LLVM API，以及如何查找你需要的API
 
->?本次实验仅需要一个基本块，因此基本块切换的部分目前可以不看
+>本次实验仅需要一个基本块，因此基本块切换的部分目前可以不看
+
+### 遍历语法树生成`LLVM IR`
+
+我们可以新建一个visitor类继承`SysYParserBaseVisitor`，并且在定义类的时候初始化父类的`T` ，我们推荐你的返回值设为`LLVMValueRef`，如下
+
+```java
+public class MyVisitor extends SysYParserBaseVisitor<LLVMValueRef> {
+    @Override
+    public LLVMValueRef visit(ParseTree tree) {
+        ...
+    }
+
+    @Override
+    public LLVMValueRef visitTerminal(TerminalNode node) {
+        ...
+    }
+    @Override
+    public LLVMValueRef visitProgram(SysYParser.ProgramContext ctx) {
+        ...
+    }
+
+    @Override
+    public LLVMValueRef visitCompUnit(SysYParser.CompUnitContext ctx) {
+        ...
+    }
+}
+```
+
+关于`LLVMValueRef`的简单介绍，你可以看https://cloud.tencent.com/developer/article/1352547。
+
+
 
 
 ## 使用LLVM API生成LLVM IR
