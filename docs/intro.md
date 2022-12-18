@@ -64,7 +64,7 @@
 | 14 (8-semantics-type-system) | 类型系统| 类型推导、类型检查 | D5.3.2、D6.5 | |
 | 15 (9-semantics-ag (1)) | 属性文法 | ANTLR 4 中的属性与动作 | A10 | A10.3 选读 |
 | 15 (9-semantics-ag (2)) | 属性文法 | SDD 与 SDT | D5 | D5.4.2、D5.5.3、D5.5.4 暂时跳过 |
-| 16 (10-ir-llvm-ir) | 中间代码生成 | LLVM IR | | |
+| 16 (10-llvm-ir) | LLVM IR 简介 | LLVM IR, LLVM Java API | [http://47.122.3.40:8081/#/llvm-doc](docs-compilers) | |
 
 
 ## 学习方法
