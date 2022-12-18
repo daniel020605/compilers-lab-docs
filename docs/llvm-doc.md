@@ -17,6 +17,7 @@
 import org.bytedeco.llvm.LLVM.*;
 import static org.bytedeco.llvm.global.LLVM.*;
 ```
+
 ## 初始化LLVM
 ```java 
 //初始化LLVM
@@ -28,18 +29,16 @@ LLVMInitializeNativeTarget();
 ```
 
 ## 创建模块
+- 你可以粗略认为一个文件就是一个模块
 ``` java
-    //创建上下文信息
-    LLVMContextRef context = LLVMContextCreate();
-
     //创建module
-    LLVMModuleRef module = LLVMModuleCreateWithNameInContext(/*String*/moduleName, context);
+    LLVMModuleRef module = LLVMModuleCreateWithName("moudle");
 
     //初始化IRBuilder，后续将使用这个builder去生成LLVM IR
-    LLVMBuilderRef builder = LLVMCreateBuilderInContext(context);
+    LLVMBuilderRef builder = LLVMCreateBuilder();
 
     //考虑到我们的语言中仅存在int一个基本类型，可以通过下面的语句为LLVM的int型重命名方便以后使用
-    LLVMTypeRef i32Type = LLVMInt32TypeInContext(context);
+    LLVMTypeRef i32Type = LLVMInt32Type();
 
 ```
 
@@ -61,14 +60,14 @@ LLVMInitializeNativeTarget();
 - 多个参数时需先生成函数的参数类型，再生成函数类型
 - 用生成的函数类型去生成函数
 ``` java
+    //生成返回值类型
+    LLVMTypeRef returnType = i32Type;
+
     //生成函数参数类型
     PointerPointer<Pointer> argumentTypes = new PointerPointer<>(2)
                 .put(0, i32Type)
                 .put(1, i32Type);
 
-    //生成返回值类型
-    LLVMTypeRef returnType = i32Type;
-    
     //生成函数类型
     LLVMTypeRef ft = LLVMFunctionType(returnType, argumentTypes, /* argumentCount */ 2, /* isVariadic */ 0);
     //若仅需一个参数也可以使用如下方式直接生成函数类型
@@ -85,9 +84,9 @@ LLVMInitializeNativeTarget();
 ``` java
 
     //通过如下语句在函数中加入基本块，一个函数可以加入多个基本块
-    LLVMBasicBlockRef block1 = LLVMAppendBasicBlockInContext(context, function, /*blockName:String*/"block1");
+    LLVMBasicBlockRef block1 = LLVMAppendBasicBlock(function, /*blockName:String*/"block1");
 
-    LLVMBasicBlockRef block2 = LLVMAppendBasicBlockInContext(context, function, /*blockName:String*/"block2");
+    LLVMBasicBlockRef block2 = LLVMAppendBasicBlock(function, /*blockName:String*/"block2");
 
     //选择要在哪个基本块后追加指令
     LLVMPositionBuilderAtEnd(builder, block1);//后续生成的指令将追加在block1的后面
@@ -251,11 +250,11 @@ tmp_ = LLVMBuildZExt(builder, tmp_, i32Type, "tmp_");
   
   + 借助github。
   
-    + 首先搜索`LLVMBuildICmp`。得到结果为：![](img/github1)
+    + 首先搜索`LLVMBuildICmp`。得到结果为：![](imgs/github1.png)
   
-    + 点击Code，然后选择Java，![](img\github2)
+    + 点击Code，然后选择Java，![](imgs\github2.png)
   
-      现在你可以看到`LLVMIntSLE`，`LLVMIntEQ`等出现在了第二个参数的位置上，你可以选择clone这些项目，然后查看`LLVMIntSLE`，`LLVMIntEQ`是在哪里定义的，助教本地的结果如下![](img/idea1)
+      现在你可以看到`LLVMIntSLE`，`LLVMIntEQ`等出现在了第二个参数的位置上，你可以选择clone这些项目，然后查看`LLVMIntSLE`，`LLVMIntEQ`是在哪里定义的，助教本地的结果如下![](imgs/idea1.png)
   
       在这里面你可以看到各种各样的常量，依据参数名你应该可以找到你需要的那一个。如果光看名字认不出来，你还可以选择复制变量名，浏览器搜索，常用的都可以搜索到结果。
 
