@@ -33,7 +33,7 @@ public class MyVisitor extends SysYParserBaseVisitor<LLVMValueRef> {
 }
 ```
 
-关于`LLVMValueRef`的简单介绍，你可以看https://cloud.tencent.com/developer/article/1352547。
+在遍历语法树的过程中生成`LLVM IR`。关于`LLVMValueRef`的简单介绍，你可以看https://cloud.tencent.com/developer/article/1352547。
 
 
 
