@@ -6,7 +6,20 @@
 - 所有翻译相关实验输入与lab1的形式一致，仅有一个源文件
 - 本实验保证输入的正确性
 - 若无特殊说明，则本实验及后续实验需要翻译的内容的语义均与C语言保持一致
-- 若无特殊说明，则本实验及后续实验进行翻译时均翻译为LLVM IR。你的`main`函数应该接受两个参数，第一个参数是源文件路径，第二个参数是生成的LLVM IR存放的文件路径。关于如何将LLVM IR输出到指定的文件中，请参考以下API：`public static native int LLVMPrintModuleToFile(LLVMModuleRef var0, String var1, @Cast({"char**"}) @ByPtrPtr BytePointer var2);`。
+- 若无特殊说明，则本实验及后续实验进行翻译时均翻译为LLVM IR。你的`main`函数应该接受两个参数，第一个参数是源文件路径，第二个参数是生成的LLVM IR存放的文件路径。
+
+  输出方式：
+
+  ```java
+  public static final BytePointer error = new BytePointer();
+  
+  
+  if (LLVMPrintModuleToFile(moudule, args[1], error) != 0) {	// moudle是你自定义的LLVMModuleRef对象
+  	LLVMDisposeMessage(error);
+  }
+  ```
+
+  
 
 ## Part1 翻译main函数
 - 本次实验需要完成对`main`函数的翻译，要求如下
