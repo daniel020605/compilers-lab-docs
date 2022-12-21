@@ -1,10 +1,12 @@
+修改记录：修改了LLVM IR输出方式；
+
 # Lab4:Main 实验要求
 
 - 从本次实验开始后续实验均为翻译中间代码
 - 所有翻译相关实验输入与lab1的形式一致，仅有一个源文件
 - 本实验保证输入的正确性
 - 若无特殊说明，则本实验及后续实验需要翻译的内容的语义均与C语言保持一致
-- 若无特殊说明，则本实验及后续实验进行翻译时均翻译为LLVM IR并使用标准错误输出来打印便于检查运行结果(请注意这里的标准错误输出是指调用LLVM的API：`public static native void LLVMDumpModule(LLVMModuleRef var0);`，详情可以参考魏老师上课提供的代码)
+- 若无特殊说明，则本实验及后续实验进行翻译时均翻译为LLVM IR。你的`main`函数应该接受两个参数，第一个参数是源文件路径，第二个参数是生成的LLVM IR存放的文件路径。关于如何将LLVM IR输出到指定的文件中，请参考以下API：`public static native int LLVMPrintModuleToFile(LLVMModuleRef var0, String var1, @Cast({"char**"}) @ByPtrPtr BytePointer var2);`。
 
 ## Part1 翻译main函数
 - 本次实验需要完成对`main`函数的翻译，要求如下
