@@ -24,6 +24,16 @@
 
 请切换分支到`lab4`
 
+修改你的Makefile文件中目标submit为如下（因为compile不可用所以要删除compile）：
+
+```makefile
+submit: clean
+	git gc
+	bash submit.sh
+```
+
+记得提交前手动`add`、`commit`。
+
 ## Part1 翻译main函数
 
 - 本次实验需要完成对`main`函数的翻译，要求如下
