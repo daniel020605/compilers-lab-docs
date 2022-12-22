@@ -26,7 +26,7 @@
 
 请切换分支到`lab4`
 
-修改你的Makefile文件中目标submit为如下（因为compile不可用所以要删除compile）：
+由于`make compile`命令编译你的源文件需要`lab4`新下载的`jar`包，而这些`jar`包的`classpath`设置比较复杂（在mac、windows、linux以及x64、arm架构上都不同，所以助教无法给出一个统一的`classpath`设置），因此本次实验开始你不能再使用`make compile`命令，另外修改你的Makefile文件中目标submit为如下（因为compile不可用所以要删除compile）：
 
 ```makefile
 submit: clean
