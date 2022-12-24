@@ -127,7 +127,7 @@ LLVMInitializeNativeTarget();
 ```
 
 - 在基本块中创建并使用局部变量
-    - 对于数组变量请使用vector类型
+    - 对于数组变量请使用LLVMVectorType或者LLVMArrayType类型
     - 数组变量使用其中的值时需要使用GetElementPtr指令，请自行到[官方文档](http://bytedeco.org/javacpp-presets/llvm/apidocs/)学习如何生成与使用GEP指令
 
 ```java 
