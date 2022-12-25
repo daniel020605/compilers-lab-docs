@@ -50,7 +50,7 @@
 
 <!-- A4.5、A12 -->
 
-| 周数 | 内容 | 知识点 | 阅读材料 | |
+| 周数 | 内容 | 知识点 | 阅读材料 | 备注 |
 | ----- | ----- | ----- | ----- | ----- |
 | 10 (0-intro) | Intro. to Compilers | 课程简介、 编译原理概述 | D1.1、D1.2；A1.1、A1.2 | |
 | 10 (1-lexer-re-antlr) | Lexer 自动生成器 | ANTLR 4 词法分析器、正则语言、正则表达式 | D3.1、D3.2；A4.1、A5.5、A15.5 | |
@@ -65,6 +65,9 @@
 | 15 (9-semantics-ag (1)) | 属性文法 | ANTLR 4 中的属性与动作 | A10 | A10.3 选读 |
 | 15 (9-semantics-ag (2)) | 属性文法 | SDD 与 SDT | D5 | D5.4.2、D5.5.3、D5.5.4 暂时跳过 |
 | 16 (10-llvm-ir) | LLVM IR 简介 | LLVM IR, LLVM Java API | [http://47.122.3.40:8081/#/llvm-doc](docs-compilers) | |
+| 17 (11-ir-expr-control) | 表达式与控制流的中间代码生成 | LLVM IR, 控制流中间代码 | D6.4、D6.6 | D6.7 选读 |
+| 17 (12-parser-lr0) | LR 语法分析算法 | LR(0)、SLR | D4.5、D4.6 | |
+| 18-补充 (13-parser-lr1) | LR 语法分析算法 | LR(1)、LALR | D4.7 | D4.7.5 选读 |
 
 
 ## 学习方法
