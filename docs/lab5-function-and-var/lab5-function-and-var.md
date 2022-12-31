@@ -1,5 +1,7 @@
 # Lab5:Function And Var 实验要求
 
+- 本次实验保证输入的正确性
+
 ## 实验开始前
 
 请切换分支到`lab5`
@@ -22,7 +24,7 @@
 
     - 对于数组变量和数组常量的初始化，有如下三种情况：
 
-        - ```c
+        - ```SysY
             int main(){
                 int a[5] = {1,2,3,4,5};
                 return a[0];
@@ -31,7 +33,7 @@
 
             数组长度与初始值长度相同，直接初始化即可。
 
-        - ```c
+        - ```SysY
             int main(){
                 int a[5] = {1,2,3,4};
                 return a[0];
@@ -40,7 +42,7 @@
 
             数组长度与初始值长度不相同，缺的初始值补`0`。
 
-        - ```c
+        - ```SysY
             int main(){
                 int a[5];
                 return a[0];
@@ -57,7 +59,7 @@
 
 输入：
 
-```c
+```SysY
 int f(int i){
     return i;
 }
@@ -70,7 +72,7 @@ int main(){
 
 输出：
 
-```c
+```LLVM IR
 ; ModuleID = 'moudle'
 source_filename = "moudle"
 
@@ -99,7 +101,7 @@ mainEntry:
 
 输入：
 
-```c
+```SysY
 int main(){
     int a[3] = {1,2,3};
     return a[1];
@@ -108,7 +110,7 @@ int main(){
 
 输出：
 
-```c
+```LLVM IR
 ; ModuleID = 'moudle'
 source_filename = "moudle"
 
