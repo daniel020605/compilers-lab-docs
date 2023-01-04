@@ -82,7 +82,7 @@ entry:                                            ; preds = %false, %true
 输入：
 
 ```SysY
-const int a = 10;
+int a = 10;
 int main() {
     if (a != 10) {
         a = 2;
