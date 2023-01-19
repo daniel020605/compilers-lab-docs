@@ -125,7 +125,6 @@ funcRParams
 
 param
    : exp
-   | STRING
    ;
 
 constExp
