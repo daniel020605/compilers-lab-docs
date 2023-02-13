@@ -2,6 +2,7 @@
     - [课程简介](2022/intro)
     - [抄袭与惩罚](2022/plagiarize)
     - [课程教材](2022/textbook)
+    - [课程作业](2022/hw)
     - [课程资源](2022/resources)
     - [环境配置](2022/environments)
     - [LLVM API 使用手册](2022/llvm-doc.md)
