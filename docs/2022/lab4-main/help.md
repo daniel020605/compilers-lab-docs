@@ -2,7 +2,7 @@
 
 ## 学习LLVM API
 
-你可以在[LLVM API使用手册](llvm-doc.md)中学习如何使用LLVM API，以及如何查找你需要的API
+你可以在[LLVM API使用手册](2022/llvm-doc.md)中学习如何使用LLVM API，以及如何查找你需要的API
 
 >本次实验仅需要一个基本块，因此基本块切换的部分目前可以不看
 
@@ -39,12 +39,12 @@ public class MyVisitor extends SysYParserBaseVisitor<LLVMValueRef> {
 
 
 ## 使用LLVM API生成LLVM IR
-- 在你的项目中引入LLVM相关的包，详见[LLVM API使用手册-准备工作](llvm-doc.md#准备工作)
-- 在你的Visitor类中import LLVM，详见[LLVM API使用手册-准备工作](llvm-doc.md#准备工作)
-- 在你的Visitor的构造函数中初始化LLVM，详见[LLVM API使用手册-初始化LLVM](llvm-doc.md#初始化LLVM)
-- 为需要翻译的文件创建模块，详见[LLVM API使用手册-创建模块](llvm-doc.md#创建模块)
+- 在你的项目中引入LLVM相关的包，详见[LLVM API使用手册-准备工作](2022/llvm-doc.md#准备工作)
+- 在你的Visitor类中import LLVM，详见[LLVM API使用手册-准备工作](2022/llvm-doc.md#准备工作)
+- 在你的Visitor的构造函数中初始化LLVM，详见[LLVM API使用手册-初始化LLVM](2022/llvm-doc.md#初始化LLVM)
+- 为需要翻译的文件创建模块，详见[LLVM API使用手册-创建模块](2022/llvm-doc.md#创建模块)
     - 你可以将手册中的`moudle`与`builder`与`i32Type`作为你的Visitor的成员变量
-- 访问到函数定义时为`module`添加`function`（函数）并为`function`添加`basicBlock`（基本块），详见[LLVM API使用手册-生成函数](llvm-doc.md#生成函数)与[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
-- 访问到`return`语句时使用`IRBuilder`在基本块内生成生成`ret`指令，详见[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
-- 访问表达式运算时使用`IRBuilder`在基本块内生成能够实现该运算的指令[LLVM API使用手册-创建基本块并添加指令](llvm-doc.md#创建基本块并添加指令)
+- 访问到函数定义时为`module`添加`function`（函数）并为`function`添加`basicBlock`（基本块），详见[LLVM API使用手册-生成函数](2022/llvm-doc.md#生成函数)与[LLVM API使用手册-创建基本块并添加指令](2022/llvm-doc.md#创建基本块并添加指令)
+- 访问到`return`语句时使用`IRBuilder`在基本块内生成生成`ret`指令，详见[LLVM API使用手册-创建基本块并添加指令](2022/llvm-doc.md#创建基本块并添加指令)
+- 访问表达式运算时使用`IRBuilder`在基本块内生成能够实现该运算的指令[LLVM API使用手册-创建基本块并添加指令](2022/llvm-doc.md#创建基本块并添加指令)
     - 翻译时请注意运算符的优先级

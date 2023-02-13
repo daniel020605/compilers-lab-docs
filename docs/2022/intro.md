@@ -18,7 +18,7 @@
   - 周一 第 7-8 节 (费 B-102)
   - 周三 第 5-6 节 (教 222)
 
-- **课程图标：** ![Compiler](.assets/images/Compiler.svg ':size=15%')
+- **课程图标：** ![Compiler](../.assets/images/Compiler.svg ':size=15%')
 
 - **授课教师：** 魏恒峰
 
@@ -40,7 +40,7 @@
 
 !> 具体内容可能会随课堂进度进行调整。
 
-?> 查看 [课程资源](resources) 获取课件、演示代码、电子书籍等。
+?> 查看 [课程资源](2022/resources) 获取课件、演示代码、电子书籍等。
 
 - D: 《编译原理 本科教学版》(龙书)
 - A: 《ANTLR 4 权威指南》
@@ -64,7 +64,7 @@
 | 14 (8-semantics-type-system) | 类型系统| 类型推导、类型检查 | D5.3.2、D6.5 | |
 | 15 (9-semantics-ag (1)) | 属性文法 | ANTLR 4 中的属性与动作 | A10 | A10.3 选读 |
 | 15 (9-semantics-ag (2)) | 属性文法 | SDD 与 SDT | D5 | D5.4.2、D5.5.3、D5.5.4 暂时跳过 |
-| 16 (10-llvm-ir) | LLVM IR 简介 | LLVM IR, LLVM Java API | [http://47.122.3.40:8081/#/llvm-doc](docs-compilers) | |
+| 16 (10-llvm-ir) | LLVM IR 简介 | LLVM IR, LLVM Java API | [http://47.122.3.40:8081/#/2022/llvm-doc](2022/llvm-doc) | |
 | 17 (11-ir-expr-control) | 表达式与控制流的中间代码生成 | LLVM IR, 控制流中间代码 | D6.4、D6.6 | D6.7 选读 |
 | 17 (12-parser-lr0) | LR 语法分析算法 | LR(0)、SLR | D4.5、D4.6 | |
 | 18-补充 (13-parser-lr1) | LR 语法分析算法 | LR(1)、LALR | D4.7 | D4.7.5 选读 |

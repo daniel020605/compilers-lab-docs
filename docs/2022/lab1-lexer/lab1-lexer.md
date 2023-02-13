@@ -103,5 +103,5 @@ Error type A at Line 3: Mysterious character "~".
 
 ## 实验帮助
 
-点击[这里](lab1-lexer/help.md)查看实验一指导文档
+点击[这里](2022/lab1-lexer/help.md)查看实验一指导文档
 

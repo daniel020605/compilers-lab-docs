@@ -116,4 +116,4 @@ mainEntry:
 ```
 
 ## 实验帮助
-点击[这里](lab4-main/help.md)查看实验四指导文档
+点击[这里](2022/lab4-main/help.md)查看实验四指导文档

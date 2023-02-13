@@ -133,4 +133,4 @@ mainEntry:
 
 
 ## 实验帮助
-点击[这里](lab5-function-and-var/help.md)查看实验五指导文档
+点击[这里](2022/lab5-function-and-var/help.md)查看实验五指导文档

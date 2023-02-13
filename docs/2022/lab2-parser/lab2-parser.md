@@ -233,4 +233,4 @@ INTEGR_CONST[green],
 ```
 
 ## 实验帮助
-点击[这里](lab2-parser/help.md)查看实验二指导文档
+点击[这里](2022/lab2-parser/help.md)查看实验二指导文档

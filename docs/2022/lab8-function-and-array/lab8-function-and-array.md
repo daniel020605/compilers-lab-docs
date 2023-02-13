@@ -249,4 +249,4 @@ mainEntry:
 
 
 ## 实验帮助
-点击[这里](lab8-function-and-array/help.md)查看实验八指导文档
+点击[这里](2022/lab8-function-and-array/help.md)查看实验八指导文档

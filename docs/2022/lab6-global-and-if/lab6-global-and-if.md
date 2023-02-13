@@ -128,4 +128,4 @@ entry:                                            ; preds = %false, %true
 提醒：你输出的`ir`不一定要跟助教一致，只要能正确执行并返回正确的结果即可。
 
 ## 实验帮助
-点击[这里](lab6-global-and-if/help.md)查看实验六指导文档
+点击[这里](2022/lab6-global-and-if/help.md)查看实验六指导文档
