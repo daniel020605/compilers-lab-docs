@@ -19,8 +19,8 @@
 - 录制讲解视频
 
 ### **作业提交**
-- 请填写 [2022-编译原理-附加作业统计表](https://table.nju.edu.cn/dtable/links/033aa8eaf0084cb7acd5) 表格 (需密码，请留意课程群信息) 前三列。
-- 请将作业上传至 [2022-编译原理-附加作业统计表](https://table.nju.edu.cn/dtable/links/033aa8eaf0084cb7acd5) 第四列。
+- 请填写 [2023-编译原理-附加作业统计表](https://table.nju.edu.cn/dtable/links/033aa8eaf0084cb7acd5) 表格 (需密码，请留意课程群信息) 前三列。
+- 请将作业上传至 [2023-编译原理-附加作业统计表](https://table.nju.edu.cn/dtable/links/033aa8eaf0084cb7acd5) 第四列。
   - 压缩包命名: `学号-中文姓名-x.zip`, 其中 `x` 是作业编号
 - 截止日期: 2023 年 2 月 13 日 晚上 23:00
 

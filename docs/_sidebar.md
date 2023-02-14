@@ -1,9 +1,10 @@
+- [课程主页](main-page)
+- [课程资源](resources)
 - 2022
     - [课程简介](2022/intro)
     - [抄袭与惩罚](2022/plagiarize)
     - [课程教材](2022/textbook)
     - [课程作业](2022/hw)
-    - [课程资源](2022/resources)
     - [环境配置](2022/environments)
     - [LLVM API 使用手册](2022/llvm-doc.md)
     - [其他教程](2022/otherguides.md)
@@ -22,3 +23,7 @@
         - [实验8](2022/lab8-function-and-array/lab8-function-and-array.md)
         - [实验⑨](2022/lab9-join-us/lab9-join-us.md)
 - 2023
+    - [课程简介](2023/intro)
+    - [抄袭与惩罚](2023/plagiarize)
+    - [课程教材](2023/textbook)
+    - [课程作业](2023/hw)
