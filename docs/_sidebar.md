@@ -1,5 +1,10 @@
 - [课程主页](main-page)
 - [课程资源](resources)
+- 2023
+    - [课程简介](2023/intro)
+    - [抄袭与惩罚](2023/plagiarize)
+    - [课程教材](2023/textbook)
+    - [课程作业](2023/hw)
 - 2022
     - [课程简介](2022/intro)
     - [抄袭与惩罚](2022/plagiarize)
@@ -30,3 +35,4 @@
     - 实验
         - [实验须知](2023/lab-all/lab-all.md)
         - [实验0](2023/lab0-test/l0.md)
+        - [实验⑨](2022/lab9-join-us/lab9-join-us.md)
