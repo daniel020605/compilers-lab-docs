@@ -27,3 +27,6 @@
     - [抄袭与惩罚](2023/plagiarize)
     - [课程教材](2023/textbook)
     - [课程作业](2023/hw)
+    - 实验
+        - [实验须知](2023/lab-all/lab-all.md)
+        - [实验0](2023/lab0-test/l0.md)
