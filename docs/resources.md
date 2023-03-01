@@ -16,12 +16,13 @@
 - [2021-compilers-problem-set](https://github.com/courses-at-nju-by-hfwei/compilers-problem-set/tree/master/2021)
 
 ## 代码仓库
-- [2023-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2023-compilers-coding): 课程演示代码仓库
-- [2022-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding): 课程演示代码仓库
+- [2023-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2023-compilers-coding): 2023 课程演示代码仓库
+- [2022-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding): 2023 课程演示代码仓库
 
-- [compilers-antlr @ github](https://github.com/courses-at-nju-by-hfwei/compilers-antlr): 备课演示代码仓库
+- [2023-compilers-coding-0 @ github](https://github.com/courses-at-nju-by-hfwei/2023-compilers-coding-0): 2023 备课演示代码仓库
+- [2022-compilers-coding-0 @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding-0): 2022 备课演示代码仓库
 
-- [pseudocode @ github](https://github.com/courses-at-nju-by-hfwei/compilers-pseudocode): 算法伪代码
+- [pseudocode @ github](https://github.com/courses-at-nju-by-hfwei/compilers-pseudocode): 编译原理算法伪代码 (欢迎贡献代码)
 
 ## 阅读资料
 - [papers-we-love @ github](https://github.com/courses-at-nju-by-hfwei/compilers-papers-we-love): 附加作业阅读材料
