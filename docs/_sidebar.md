@@ -16,8 +16,8 @@
     - [环境配置](2022/environments)
     - [LLVM API 使用手册](2022/llvm-doc.md)
     - [其他教程](2022/otherguides.md)
-    - [完整词法规则](2022/lexer.md)
-    - [完整语法规则](2022/parser.md)
+    - 完整词法规则(已失效)
+    - 完整语法规则(已失效)
     - 实验
         - [实验须知](2022/lab-all/lab-all.md)
         - [实验0](2022/lab0-test/l0.md)
