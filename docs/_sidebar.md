@@ -8,6 +8,7 @@
     - 实验
         - [实验须知](2023/lab-all/lab-all.md)
         - [实验0](2023/lab0-test/l0.md)
+        - [实验1](2023/lab1-lexer/lab1-lexer.md)
 - 2022
     - [课程简介](2022/intro)
     - [抄袭与惩罚](2022/plagiarize)
