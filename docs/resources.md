@@ -19,6 +19,8 @@
 - [2023-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2023-compilers-coding): 2023 课程演示代码仓库
 - [2022-compilers-coding @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding): 2023 课程演示代码仓库
 
+- [learning-llvm](https://github.com/courses-at-nju-by-hfwei/learning-llvm): LLVM 相关演示代码仓库
+
 - [2023-compilers-coding-0 @ github](https://github.com/courses-at-nju-by-hfwei/2023-compilers-coding-0): 2023 备课演示代码仓库
 - [2022-compilers-coding-0 @ github](https://github.com/courses-at-nju-by-hfwei/2022-compilers-coding-0): 2022 备课演示代码仓库
 
